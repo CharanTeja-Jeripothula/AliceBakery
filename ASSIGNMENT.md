@@ -21,6 +21,8 @@
     This annotation over a field of a class helps the IoC container to inject the required field bean into the class
 11) #### @ConditionalOnProperty, @ConditionalOnClass, @ConditionalOnProperty
     This annotation is added to beans to add a validation/check that is processed before bean creation. Bean is created only if the condition returns true.
+12) #### @PostConstruct, @PreDestroy
+    These are lifecycle hook annotations that are added above bean methods which need to run after they are initialised or before destroyed ( just before the application server stops) respectively.
 
 # Scenarios where Spring-boot is more helpful over Spring Framework
 - When time spent on the business logic development is prioritized over the time spent on configuration
